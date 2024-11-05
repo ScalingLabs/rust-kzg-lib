@@ -1,10 +1,10 @@
 [package]
-name = "kzg"
+name = "eip4844"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "kzg"
+name = "eip4844"
 path = "src/lib.rs"
 
 [dependencies]

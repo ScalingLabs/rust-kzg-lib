@@ -93,6 +93,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "eip4844"
+version = "0.1.0"
+dependencies = [
+ "blst",
+ "num_cpus",
+ "rayon",
+ "sha2",
+ "siphasher",
+ "threadpool",
+]
+
+[[package]]
 name = "either"
 version = "1.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -119,18 +131,6 @@ name = "hermit-abi"
 version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d231dfb89cfffdbc30e7fc41579ed6066ad03abda9e567ccafae602b97ec5024"
-
-[[package]]
-name = "kzg"
-version = "0.1.0"
-dependencies = [
- "blst",
- "num_cpus",
- "rayon",
- "sha2",
- "siphasher",
- "threadpool",
-]
 
 [[package]]
 name = "libc"

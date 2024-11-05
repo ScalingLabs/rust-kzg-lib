@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["kzg"]
+members = ["eip4844"]
 
 [profile.bench]
 lto = "thin"
