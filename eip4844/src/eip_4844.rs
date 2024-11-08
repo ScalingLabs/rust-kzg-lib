@@ -1,4 +1,8 @@
+#![allow(non_camel_case_types)]
+extern crate alloc;
+
 use core::ffi::c_uint;
+use blst::{blst_fr, blst_p1, blst_p2};
 
 
 //////////////////////// Constant Values for EIP-4844 ///////////////////////
@@ -54,3 +58,11 @@ pub struct KZGCommitment {
 pub struct KZGProof {
     pub bytes: [u8; BYTES_PER_PROOF]
 }
+
+pub struct CKZSettings {
+    pub max_width: u64,
+    pub roots_of_unit: *mut blst_fr,
+    pub g1_values: *mut blst_p1,
+    pub g2_values: *mut blst_p2,
+}
+
