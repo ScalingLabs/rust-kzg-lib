@@ -4,6 +4,7 @@ extern crate alloc;
 use core::ffi::c_uint;
 use blst::{blst_fr, blst_p1, blst_p2};
 
+use crate::utils::bit_reversal_permutation;
 
 //////////////////////// Constant Values for EIP-4844 ///////////////////////
 pub const FIELD_ELEMENTS_PER_BLOB: usize = 4096;
