@@ -1,0 +1,1 @@
+export C_KZG_4844_GIT_HASH=main
